@@ -5,12 +5,12 @@ import Navbar from "../NavBar"
 
 const Category = () => {
     return (
-        <>
+        <div className="content allads">
             <Navbar />
             <CategoryBanner />
             <Categories />
             <Footer />
-        </>
+        </div>
     )
 }
 

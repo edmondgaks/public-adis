@@ -6,13 +6,13 @@ import HomeCategories from "../HomeCategories"
 
 const Home = () => {
     return (
-        <>
+        <div className="content allads">
             <Navbar />
             <HeroBanner />
             <HomeCategories />
             <PostSection />
             <Footer />
-        </>
+        </div>
     )
 }
 
