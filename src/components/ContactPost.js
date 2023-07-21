@@ -20,8 +20,7 @@ const ContactPost = () => {
                             <div class="col-md-6">
                               <label class="control-label"
                                 >Your Name
-                                <span class="required">*</span></label
-                              >
+                                <span class="required">*</span></label>
                               <input
                                 type="text"
                                 value=""

@@ -8,6 +8,7 @@ import FAQ from './components/pages/FAQ';
 import Auth from './components/pages/Auth';
 import PostAds from './components/pages/PostAds';
 import MyProfile from './components/pages/MyProfile';
+import MyAds from './components/pages/MyAds';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/loginRegister' element={<Auth /> } />
         <Route path='/postad' element={<PostAds /> } />
         <Route path='/myprofile' element={<MyProfile /> } />
+        <Route path='/myads' element={<MyAds /> } />
       </Routes>
     </Router>
   );
