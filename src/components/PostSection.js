@@ -1,4 +1,4 @@
-import "../App.css";
+import react from "react"; 
 
 const PostSection = () => {
     return (
@@ -137,7 +137,7 @@ const PostSection = () => {
               <div className="post-box">
                 <div className="thumbnail-holder">
                   <a href="#">
-                    <img src="img/bmw-1313343_640.jpg" alt="Car" />
+                    <img src="../../public/img/bmw-1313343_640.jpg" alt="Car" />
                   </a>
                 </div>
                 <div className="post-box-content">
@@ -164,7 +164,7 @@ const PostSection = () => {
               <div className="post-box">
                 <div className="thumbnail-holder">
                   <a href="#">
-                    <img src="img/job-2860035_640.jpg" alt="Footbal" />
+                    <img src="../../public/img/job-2860035_640.jpg" alt="Footbal" />
                   </a>
                 </div>
                 <div className="post-box-content">
@@ -189,7 +189,7 @@ const PostSection = () => {
               <div className="post-box">
                 <div className="thumbnail-holder">
                   <a href="#">
-                    <img src="img/home-office-336374_640.jpg" alt="laptop" />
+                    <img src="../../public/img/home-office-336374_640.jpg" alt="laptop" />
                   </a>
                 </div>
                 <div className="post-box-content">
@@ -216,7 +216,7 @@ const PostSection = () => {
               <div className="post-box">
                 <div className="thumbnail-holder">
                   <a href="#">
-                    <img src="img/monitor-1276949_640.jpg" alt="Montior" />
+                    <img src="../../public/img/monitor-1276949_640.jpg" alt="Montior" />
                   </a>
                 </div>
                 <div className="post-box-content">
@@ -239,7 +239,7 @@ const PostSection = () => {
               <div className="post-box">
                 <div className="thumbnail-holder">
                   <a href="#">
-                    <img src="img/pug-801826_640.jpg" alt="dog" />
+                    <img src="../../public/img/pug-801826_640.jpg" alt="dog" />
                   </a>
                 </div>
                 <div className="post-box-content">
@@ -262,7 +262,7 @@ const PostSection = () => {
               <div className="post-box">
                 <div className="thumbnail-holder">
                   <a href="#">
-                    <img src="img/rottweiler-1785760_640.jpg" alt="pupies" />
+                    <img src="../../public/img/rottweiler-1785760_640.jpg" alt="pupies" />
                   </a>
                 </div>
                 <div className="post-box-content">
@@ -285,7 +285,7 @@ const PostSection = () => {
               <div className="post-box">
                 <div className="thumbnail-holder">
                   <a href="#">
-                    <img src="img/medical-563427_640.jpg" alt="doc" />
+                    <img src="../../public/img/medical-563427_640.jpg" alt="doc" />
                   </a>
                 </div>
                 <div className="post-box-content">

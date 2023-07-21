@@ -1,5 +1,3 @@
-import "../App.css";
-
 import TopBar from "./TopBar";
 
 const Navbar = () => {
