@@ -1,116 +1,396 @@
-
 const Categories = () => {
     return (
-        <div className="category-container">
+        <div className="post-section">
         <div className="container">
-          <h2 className="text-center styleh2 karma">
-            <a className="greens" href="#">Categorias</a>
-          </h2>
-          <div className="cat-icons">
-            <a href="#">
-              <div className="mainicon icon maida-laptop">
-                <span className="text-icon">Laptops</span>
+          <div className="row">
+            <div className="col-lg-12">
+              <nav aria-label="breadcrumb">
+                <ol className="breadcrumb">
+                  <li className="breadcrumb-item"><a href="#">Home</a></li>
+                  <li className="breadcrumb-item active" aria-current="page">
+                    Category
+                  </li>
+                </ol>
+              </nav>
+              <h2 className="styleh2 karma text-center">Phone</h2>
+            </div>
+            <div className="col-xl-12 col-lg-12 col-md-9 col-sm-12">
+              <div className="row">
+                <div className="col-xl-12 col-lg-12">
+                  <p>14,185 ads in <strong>United States Of America</strong></p>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img src="img/sport-3365503_640.jpg" alt="iphone" />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">Iphone 64GB 6s Plus</a></h3>
+
+                      <div className="post-category">
+                        <a href="#"> <i className="fa fa-list-alt"></i> Phones</a>
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i> London</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>1600
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img src="img/books-1617327_640.jpg" alt="books" />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">Books for rent</a></h3>
+
+                      <div className="post-category">
+                        <a href="#"> <i className="fa fa-list-alt"></i> Books</a>
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i> Berlin</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>5000
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img src="img/football-3471371_640.jpg" alt="Footbal" />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">Football New fifa</a></h3>
+
+                      <div className="post-category">
+                        <a href="#"> <i className="fa fa-list-alt"></i> Games</a>
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i> Lahore</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>10.0 M
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img src="img/bicycle-1209682_640.jpg" alt="bicycle" />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">Bicyle</a></h3>
+
+                      <div className="post-category">
+                        <a href="#"> <i className="fa fa-list-alt"></i> vehicle</a>
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i> New York</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>500.0 k
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img
+                          src="img/vegetables-1584999_640.jpg"
+                          alt="vegetable"
+                        />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">Fresh Food And ....</a></h3>
+
+                      <div className="post-category">
+                        <a href="#"> <i className="fa fa-list-alt"></i> Food</a>
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i> Norway</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>150.0 k
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img src="img/bmw-1313343_640.jpg" alt="Car" />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">New BMW For...</a></h3>
+
+                      <div className="post-category">
+                        <a href="#"> <i className="fa fa-list-alt"></i> Car</a>
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i>Australia</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>10.0 m
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img src="img/job-2860035_640.jpg" alt="Footbal" />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">we are hiring</a></h3>
+
+                      <div className="post-category">
+                        <a href="#"> <i className="fa fa-list-alt"></i> Jobs</a>
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i> Pakistan</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>...
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img
+                          src="img/home-office-336374_640.jpg"
+                          alt="laptop"
+                        />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">Apple Mac 16gb..</a></h3>
+
+                      <div className="post-category">
+                        <a href="#"> <i className="fa fa-list-alt"></i> Laptop</a>
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i> Auckland</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>500.0 k
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img src="img/monitor-1276949_640.jpg" alt="Montior" />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">32" Lcd Tv</a></h3>
+
+                      <div className="post-category">
+                        <a href="#"> <i className="fa fa-list-alt"></i> LCD</a>
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i> Paris</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>2800
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img src="img/pug-801826_640.jpg" alt="dog" />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">Dog for adoption</a></h3>
+
+                      <div className="post-category">
+                        <a href="#"> <i className="fa fa-list-alt"></i> Animal</a>
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i> Japan</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>Free
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img
+                          src="img/rottweiler-1785760_640.jpg"
+                          alt="pupies"
+                        />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">2 Pupies Inocent</a></h3>
+
+                      <div className="post-category">
+                        <a href="#"> <i className="fa fa-list-alt"></i> Dogs</a>
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i> Turkey</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>5.0 M
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <div className="post-box">
+                    <div className="thumbnail-holder">
+                      <a href="product.html">
+                        <img src="img/medical-563427_640.jpg" alt="doc" />
+                      </a>
+                    </div>
+                    <div className="post-box-content">
+                      <h3><a href="#">Child Care Center</a></h3>
+
+                      <div className="post-category">
+                        <a href="#">
+                          <i className="fa fa-list-alt"></i> Child Care</a
+                        >
+                      </div>
+                      <div className="post-location">
+                        <a href="#">
+                          <i className="fa fa-location-arrow"></i> Atlanta</a
+                        >
+                      </div>
+                      <div className="post-meta">
+                        <i className="fa fa-dollar"></i>50.0 k
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
+                >
+                  <nav aria-label="Page navigation">
+                    <ul className="pagination justify-content-center flex-wrap">
+                      <li className="page-item disabled">
+                        <a className="page-link" href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link active-pagination" href="#">1</a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">2</a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">3</a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">...</a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">93</a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">94</a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">95</a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-briefcase">
-                <span className="text-icon">Empleos</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-t-shirt">
-                <span className="text-icon">Ropa</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-car-1">
-                <span className="text-icon">Carros</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-calculator">
-                <span className="text-icon">Auditors</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-zoo">
-                <span className="text-icon">máscotas</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-town-hall">
-                <span className="text-icon">Finance</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-art-gallery">
-                <span className="text-icon">Art</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-fast-food">
-                <span className="text-icon">Comida</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-bar">
-                <span className="text-icon">Club</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-delivery-transport-2">
-                <span className="text-icon">Logistics</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-display">
-                <span className="text-icon">Electronicos</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-cup">
-                <span className="text-icon">Cafe</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-case-medic">
-                <span className="text-icon">Doctores</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon">
-                <i className="fa fa-film" aria-hidden="true"></i>
-                <span className="text-icon">Entretenimiento</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-soccer">
-                <span className="text-icon">Juegos</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-phone">
-                <span className="text-icon">Celulares</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon" data-icon="F">
-                <span className="text-icon">Support</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon">
-                <i className="fa fa-book" aria-hidden="true"></i>
-                <span className="text-icon">Libros</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon">
-                <i className="fa fa-child" aria-hidden="true"></i>
-                <span className="text-icon">Para niños</span>
-              </div>
-            </a>
-            <div className="clearfix"></div>
+            </div>
           </div>
         </div>
       </div>
