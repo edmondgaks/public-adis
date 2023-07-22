@@ -33,13 +33,13 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="nav navbar-nav ml-auto">
                         <li className="nav-item">
-                        <a className="nav-link" href="index.html"
+                        <a className="nav-link" href="/"
                             >Inicio
                             <span className="sr-only">(current)</span>
                         </a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="category.html">Búsqueda avanzada</a>
+                        <a className="nav-link" href="/category">Búsqueda avanzada</a>
                         </li>
                         <li className="nav-item dropdown">
                         <a
@@ -51,14 +51,14 @@ const Navbar = () => {
                             >Categorias <i className="fa fa-angle-down"></i></a>
                         <ul className="dropdown-menu border-0 shadow">
                             <li>
-                            <a href="category.html" className="dropdown-item">Trabajos </a>
+                            <a href="/category" className="dropdown-item">Trabajos </a>
                             </li>
                             <li>
-                            <a href="category.html" className="dropdown-item">Propiedades</a>
+                            <a href="/category" className="dropdown-item">Propiedades</a>
                             </li>
                             <li className="dropdown-submenu">
                             <a
-                                href="category.html"
+                                href="/category"
                                 role="button"
                                 data-toggle="dropdown"
                                 aria-haspopup="true"
@@ -69,22 +69,22 @@ const Navbar = () => {
                                 <li>
                                 <a
                                     tabindex="-1"
-                                    href="category.html"
+                                    href="/category"
                                     className="dropdown-item"
                                     >Apple</a>
                                 </li>
                                 <li>
-                                <a href="category.html" className="dropdown-item"
+                                <a href="/category" className="dropdown-item"
                                     >Samsung</a>
                                 </li>
                                 <li>
-                                <a href="category.html" className="dropdown-item">LG</a>
+                                <a href="/category" className="dropdown-item">LG</a>
                                 </li>
                             </ul>
                             </li>
                             <li className="dropdown-submenu">
                             <a
-                                href="category.html"
+                                href="/category"
                                 role="button"
                                 data-toggle="dropdown"
                                 aria-haspopup="true"
@@ -94,25 +94,25 @@ const Navbar = () => {
                                 <li>
                                 <a
                                     tabindex="-1"
-                                    href="category.html"
+                                    href="/category"
                                     className="dropdown-item">Toyota</a
                                 >
                                 </li>
                                 <li>
-                                <a href="category.html" className="dropdown-item"
+                                <a href="/category" className="dropdown-item"
                                     >Suzuki</a>
                                 </li>
                                 <li>
-                                <a href="category.html" className="dropdown-item"
+                                <a href="/category" className="dropdown-item"
                                     >Honda</a>
                                 </li>
                             </ul>
                             </li>
                             <li>
-                            <a href="category.html" className="dropdown-item">Renta</a>
+                            <a href="/category" className="dropdown-item">Renta</a>
                             </li>
                             <li>
-                            <a href="category.html" className="dropdown-item"
+                            <a href="/category" className="dropdown-item"
                                 >Servicios</a
                             >
                             </li>
@@ -129,25 +129,25 @@ const Navbar = () => {
                             >Páginas <i className="fa fa-angle-down"></i></a>
                         <ul className="dropdown-menu border-0 shadow">
                             <li>
-                            <a href="aboutus.html" className="dropdown-item">Info</a>
+                            <a href="/about-us" className="dropdown-item">Info</a>
                             </li>
-                            <li><a href="blog.html" className="dropdown-item">Blog</a></li>
+                            <li><a href="blog" className="dropdown-item">Blog</a></li>
                             <li>
-                            <a href="contactus.html" className="dropdown-item">Contáctanos</a>
+                            <a href="/contactus" className="dropdown-item">Contáctanos</a>
                             </li>
-                            <li><a href="faq.html" className="dropdown-item">Faq</a></li>
+                            <li><a href="/faq" className="dropdown-item">Faq</a></li>
                         </ul>
                         </li>
 
                         <li className="nav-item">
-                        <a className="nav-link" href="contactus.html">Contáctanos</a>
+                        <a className="nav-link" href="/contactus">Contáctanos</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="loginRegister.html"
+                        <a className="nav-link" href="/loginRegister"
                             ><i className="fa fa-user" aria-hidden="true"></i>Login /Registro</a>
                         </li>
                         <li className="nav-item bordering">
-                        <a className="nav-link" href="postad.html">Anuncia Gratis</a>
+                        <a className="nav-link" href="/postad">Anuncia Gratis</a>
                         </li>
                     </ul>
                     </div>
