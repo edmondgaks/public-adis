@@ -9,6 +9,8 @@ import Auth from './components/pages/Auth';
 import PostAds from './components/pages/PostAds';
 import MyProfile from './components/pages/MyProfile';
 import MyAds from './components/pages/MyAds';
+import Product from './components/pages/Product';
+import Dashboard from './components/pages/Dashboard';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path='/postad' element={<PostAds /> } />
         <Route path='/myprofile' element={<MyProfile /> } />
         <Route path='/myads' element={<MyAds /> } />
+        <Route path='/product' element={<Product /> } />
+        <Route path='/dashboard' element={<Dashboard /> } />
       </Routes>
     </Router>
   );

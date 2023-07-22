@@ -30,19 +30,19 @@ const PostAdsBanner = () => {
                                     <nav class="navdashboard">
                                     <ul>
                                         <li>
-                                        <a href="#">
+                                        <a href="/dashboard">
                                             <i class="fa fa-dashboard"></i>
                                             <span>Dashboard</span>
                                         </a>
                                         </li>
                                         <li>
-                                        <a href="myprofile.html">
+                                        <a href="/myprofile">
                                             <i class="fa fa-user"></i>
                                             <span>My Profile</span>
                                         </a>
                                         </li>
                                         <li>
-                                        <a href="#">
+                                        <a href="/myads">
                                             <span data-icon="V" class="icon"></span>
                                             <span>My Ads</span>
                                         </a>

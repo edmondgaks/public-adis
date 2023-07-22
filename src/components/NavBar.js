@@ -9,7 +9,7 @@ const Navbar = () => {
                 <nav
                     className="navbar navbar-expand-lg justify-content-between nav-color zeropadd">
                     <div className="navbar-header">
-                    <a className="navbar-brand zeropadd" href="index.html">
+                    <a className="navbar-brand zeropadd" href="/">
                         <img
                         src="img/logo_200x200.png"
                         alt="logo"

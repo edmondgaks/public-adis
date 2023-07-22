@@ -25,12 +25,12 @@ const Footer = () => {
                         <div className="col-lg-3 col-md-6 col-sm-12">
                             <h3>Popular Categories</h3>
                             <ul>
-                            <li><a href="category.html">Properties</a></li>
-                            <li><a href="category.html">Jobs</a></li>
-                            <li><a href="category.html">Phones</a></li>
-                            <li><a href="category.html">Cars</a></li>
-                            <li><a href="category.html">Rent</a></li>
-                            <li><a href="category.html">Electronics</a></li>
+                            <li><a href="/category">Properties</a></li>
+                            <li><a href="/category">Jobs</a></li>
+                            <li><a href="/category">Phones</a></li>
+                            <li><a href="/category">Cars</a></li>
+                            <li><a href="/category">Rent</a></li>
+                            <li><a href="/category">Electronics</a></li>
                             </ul>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-12">
@@ -47,12 +47,12 @@ const Footer = () => {
                         <div className="col-lg-3 col-md-6 col-sm-12">
                             <h3>Important Links</h3>
                             <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="aboutus.html">About</a></li>
-                            <li><a href="contactus.html">Contact Us</a></li>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="faq.html">Faqs</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about-us">About</a></li>
+                            <li><a href="/contactus">Contact Us</a></li>
+                            <li><a href="/loginRegister">Login</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/faq">Faqs</a></li>
                             </ul>
                         </div>
                         </div>
@@ -71,7 +71,7 @@ const Footer = () => {
                                 <li><a href="#">Terms &amp; Condition</a></li>
                                 <li><a href="dashboard.html">Dashboard</a></li>
                                 <li><a href="#">Privacy Policy </a></li>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="/aboutus">About Us</a></li>
                                 </ul>
                             </div>
                             </div>

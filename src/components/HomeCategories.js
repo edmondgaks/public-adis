@@ -4,7 +4,7 @@ const HomeCategories = () => {
         <div className="category-container">
         <div className="container">
           <h2 className="text-center styleh2 karma">
-            <a className="greens" href="#">Categorias</a>
+            <a className="greens" href="/category">Categorias</a>
           </h2>
           <div className="cat-icons">
             <a href="#">

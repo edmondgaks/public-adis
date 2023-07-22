@@ -24,7 +24,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/sport-3365503_640.jpg" alt="iphone" />
                       </a>
                     </div>
@@ -51,7 +51,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/books-1617327_640.jpg" alt="books" />
                       </a>
                     </div>
@@ -78,7 +78,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/football-3471371_640.jpg" alt="Footbal" />
                       </a>
                     </div>
@@ -105,7 +105,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/bicycle-1209682_640.jpg" alt="bicycle" />
                       </a>
                     </div>
@@ -132,7 +132,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img
                           src="img/vegetables-1584999_640.jpg"
                           alt="vegetable"
@@ -162,7 +162,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/bmw-1313343_640.jpg" alt="Car" />
                       </a>
                     </div>
@@ -189,7 +189,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/job-2860035_640.jpg" alt="Footbal" />
                       </a>
                     </div>
@@ -216,7 +216,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img
                           src="img/home-office-336374_640.jpg"
                           alt="laptop"
@@ -246,7 +246,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/monitor-1276949_640.jpg" alt="Montior" />
                       </a>
                     </div>
@@ -273,7 +273,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/pug-801826_640.jpg" alt="dog" />
                       </a>
                     </div>
@@ -300,7 +300,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img
                           src="img/rottweiler-1785760_640.jpg"
                           alt="pupies"
@@ -330,7 +330,7 @@ const Categories = () => {
                 >
                   <div className="post-box">
                     <div className="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/medical-563427_640.jpg" alt="doc" />
                       </a>
                     </div>

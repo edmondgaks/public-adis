@@ -17,19 +17,19 @@ const MyProfileBlog = () => {
                   <nav class="navdashboard">
                     <ul>
                       <li>
-                        <a href="dashboard.html">
+                        <a href="/dashboard">
                           <i class="fa fa-dashboard"></i>
                           <span>Dashboard</span>
                         </a>
                       </li>
                       <li>
-                        <a href="myprofile.html">
+                        <a href="/myprofile">
                           <i class="fa fa-user"></i>
                           <span>My Profile</span>
                         </a>
                       </li>
                       <li>
-                        <a href="myads.html">
+                        <a href="/myads">
                           <span data-icon="V" class="icon"></span>
                           <span>My Ads</span>
                         </a>
@@ -74,7 +74,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/sport-3365503_640.jpg" alt="iphone" />
                       </a>
                     </div>
@@ -101,7 +101,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/books-1617327_640.jpg" alt="books" />
                       </a>
                     </div>
@@ -128,7 +128,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/football-3471371_640.jpg" alt="Footbal" />
                       </a>
                     </div>
@@ -140,8 +140,7 @@ const MyProfileBlog = () => {
                       </div>
                       <div class="post-location">
                         <a href="#">
-                          <i class="fa fa-location-arrow"></i> Lahore</a
-                        >
+                          <i class="fa fa-location-arrow"></i> Lahore</a>
                       </div>
                       <div class="post-meta">
                         <i class="fa fa-dollar"></i>10.0 M
@@ -155,7 +154,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/bicycle-1209682_640.jpg" alt="bicycle" />
                       </a>
                     </div>
@@ -182,7 +181,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img
                           src="img/vegetables-1584999_640.jpg"
                           alt="vegetable"
@@ -212,7 +211,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/bmw-1313343_640.jpg" alt="Car" />
                       </a>
                     </div>
@@ -239,7 +238,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/job-2860035_640.jpg" alt="Footbal" />
                       </a>
                     </div>
@@ -266,7 +265,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img
                           src="img/home-office-336374_640.jpg"
                           alt="laptop"
@@ -296,7 +295,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/monitor-1276949_640.jpg" alt="Montior" />
                       </a>
                     </div>
@@ -323,7 +322,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/pug-801826_640.jpg" alt="dog" />
                       </a>
                     </div>
@@ -350,7 +349,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img
                           src="img/rottweiler-1785760_640.jpg"
                           alt="pupies"
@@ -380,7 +379,7 @@ const MyProfileBlog = () => {
                 >
                   <div class="post-box">
                     <div class="thumbnail-holder">
-                      <a href="product.html">
+                      <a href="/product">
                         <img src="img/medical-563427_640.jpg" alt="doc" />
                       </a>
                     </div>
