@@ -3,16 +3,20 @@ import HeroBanner from "../HeroBanner"
 import Navbar from "../NavBar"
 import PostSection from "../PostSection"
 import HomeCategories from "../HomeCategories"
+import Spinner from "../Spinner";
 
 const Home = () => {
     return (
-        <div className="content allads">
+        <>
+            <Spinner />
             <Navbar />
-            <HeroBanner />
-            <HomeCategories />
-            <PostSection />
-            <Footer />
-        </div>
+            <div className="content allads">
+                <HeroBanner />
+                <HomeCategories />
+                <PostSection />
+                <Footer />
+            </div>
+        </>
     )
 }
 

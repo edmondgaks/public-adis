@@ -2,15 +2,19 @@ import AboutHero from "../AboutHero"
 import AboutPost from "../AboutPost"
 import Footer from "../Footer"
 import Navbar from "../NavBar"
+import Spinner from "../Spinner";
 
 const AboutUs = () => {
     return (
-        <div className="content allads">
+        <>
+            <Spinner />
             <Navbar />
-            <AboutHero />
-            <AboutPost />
-            <Footer />
-        </div>
+            <div className="content allads">
+                <AboutHero />
+                <AboutPost />
+                <Footer />
+            </div>
+        </>
     )
 }
 

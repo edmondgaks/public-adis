@@ -2,15 +2,19 @@ import FaqHero from "../FaqHero"
 import FaqPost from "../FaqPost"
 import Footer from "../Footer"
 import Navbar from "../NavBar"
+import Spinner from "../Spinner";
 
 const FAQ = () => {
     return (
-        <div className="content allads">
+        <>
+            <Spinner />
             <Navbar />
-            <FaqHero />
-            <FaqPost />
-            <Footer />
-        </div>
+            <div className="content allads">
+                <FaqHero />
+                <FaqPost />
+                <Footer />
+            </div>
+        </>
     )
 }
 

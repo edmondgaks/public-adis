@@ -2,15 +2,19 @@ import ContactBanner from "../../ContactBanner"
 import ContactPost from "../ContactPost"
 import Footer from "../Footer"
 import Navbar from "../NavBar"
+import Spinner from "../Spinner";
 
 const Contact = () => {
     return (
-        <div className="content allads">
+        <>
+            <Spinner />
             <Navbar />
-            <ContactBanner />
-            <ContactPost />
-            <Footer />
-        </div>
+            <div className="content allads">
+                <ContactBanner />
+                <ContactPost />
+                <Footer />
+            </div>
+        </>
     )
 }
 
