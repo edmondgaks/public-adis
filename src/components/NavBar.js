@@ -1,83 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import TopBar from "./TopBar";
 
-const DropdownMenuItem = ({ title, subMenuItems }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  return (
-    <li className="nav-item dropdown">
-      <a
-        href="#"
-        onClick={toggleMenu}
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded={isOpen}
-        className="nav-link dropdown-toggle"
-      >
-        {title} <i className="fa fa-angle-down"></i>
-      </a>
-      {isOpen && (
-        <ul className="dropdown-menu border-0 shadow" onClick={toggleMenu}>
-          {subMenuItems.map((item) => (
-            <li key={item.label}>
-              <a href={item.url} className="dropdown-item">
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
-    </li>
-  );
-};
-
 const Navbar = () => {
-  const [menuItems] = useState([
-    { label: "Inicio", url: "/" },
-    { label: "Búsqueda avanzada", url: "/category" },
-    {
-      label: "Categorias",
-      subMenuItems: [
-        { label: "Trabajos", url: "/category" },
-        { label: "Propiedades", url: "/category" },
-        {
-          label: "Celulares",
-          subMenuItems: [
-            { label: "Apple", url: "/category" },
-            { label: "Samsung", url: "/category" },
-            { label: "LG", url: "/category" },
-          ],
-        },
-        {
-          label: "Carros",
-          subMenuItems: [
-            { label: "Toyota", url: "/category" },
-            { label: "Suzuki", url: "/category" },
-            { label: "Honda", url: "/category" },
-          ],
-        },
-        { label: "Renta", url: "/category" },
-        { label: "Servicios", url: "/category" },
-      ],
-    },
-    {
-      label: "Páginas",
-      subMenuItems: [
-        { label: "Info", url: "/about-us" },
-        { label: "Blog", url: "/blog" },
-        { label: "Contáctanos", url: "/contactus" },
-        { label: "Faq", url: "/faq" },
-      ],
-    },
-    { label: "Contáctanos", url: "/contactus" },
-    { label: "Login / Registro", url: "/loginRegister" },
-    { label: "Anuncia Gratis", url: "/postad" },
-  ]);
-
   return (
     <div className="background-header">
       <TopBar />
@@ -86,11 +10,7 @@ const Navbar = () => {
           <nav className="navbar navbar-expand-lg justify-content-between nav-color zeropadd">
             <div className="navbar-header">
               <a className="navbar-brand zeropadd" href="/">
-                <img
-                  src="img/logo_200x200.png"
-                  alt="logo"
-                  className="max-width-60px"
-                />
+                <img src="img/logo_200x200.png" alt="logo" className="max-width-60px" />
               </a>
               <button
                 className="navbar-toggler"
@@ -102,31 +22,39 @@ const Navbar = () => {
                 aria-label="Toggle navigation"
               >
                 <span className="navbar-toggler-icon"></span>
-                <span className="navbar-toggler-icon"></span>
-                <span className="navbar-toggler-icon"></span>
               </button>
             </div>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="nav navbar-nav ml-auto">
-                {menuItems.map((item) => {
-                  if (item.subMenuItems) {
-                    return (
-                      <DropdownMenuItem
-                        key={item.label}
-                        title={item.label}
-                        subMenuItems={item.subMenuItems}
-                      />
-                    );
-                  } else {
-                    return (
-                      <li className="nav-item" key={item.label}>
-                        <a className="nav-link" href={item.url}>
-                          {item.label}
-                        </a>
-                      </li>
-                    );
-                  }
-                })}
+                <NavItem link="/" label="Inicio" isActive={true} />
+                <NavItem link="/category" label="Búsqueda avanzada" />
+                <NavDropdown label="Categorias">
+                  <NavDropdownItem link="/category" label="Trabajos" />
+                  <NavDropdownItem link="/category" label="Propiedades" />
+                  <NavDropdownItem link="/category" label="Celulares">
+                    <NavDropdownItem link="/category" label="Apple" />
+                    <NavDropdownItem link="/category" label="Samsung" />
+                    <NavDropdownItem link="/category" label="LG" />
+                  </NavDropdownItem>
+                  <NavDropdownItem link="/category" label="Carros">
+                    <NavDropdownItem link="/category" label="Toyota" />
+                    <NavDropdownItem link="/category" label="Suzuki" />
+                    <NavDropdownItem link="/category" label="Honda" />
+                  </NavDropdownItem>
+                  <NavDropdownItem link="/category" label="Renta" />
+                  <NavDropdownItem link="/category" label="Servicios" />
+                </NavDropdown>
+
+                <NavDropdown label="Páginas">
+                  <NavDropdownItem link="/about-us" label="Info" />
+                  <NavDropdownItem link="blog" label="Blog" />
+                  <NavDropdownItem link="/contactus" label="Contáctanos" />
+                  <NavDropdownItem link="/faq" label="Faq" />
+                </NavDropdown>
+
+                <NavItem link="/contactus" label="Contáctanos" />
+                <NavItem link="/loginRegister" label={<><i className="fa fa-user" aria-hidden="true"></i> Login /Registro</>} />
+                <NavAd link="/postad" label="Anuncia Gratis" />
               </ul>
             </div>
           </nav>
@@ -134,6 +62,65 @@ const Navbar = () => {
       </div>
     </div>
   );
+};
+
+
+const NavItem = ({ link, label, isActive }) => {
+  return (
+    <li className={`nav-item${isActive ? ' active' : ''}`}>
+      <a className="nav-link" href={link}>
+        {label}
+        {isActive && <span className="sr-only">(current)</span>}
+      </a>
+    </li>
+  );
+};
+
+const NavAd = ({ link, label, isActive }) => {
+    return (
+      <li className={`nav-item bordering ${isActive ? ' active' : ''}`}>
+        <a className="nav-link" href={link}>
+          {label}
+          {isActive && <span className="sr-only">(current)</span>}
+        </a>
+      </li>
+    );
+  };
+
+const NavDropdown = ({ label, children }) => {
+  return (
+    <li className="nav-item dropdown">
+      <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="nav-link dropdown-toggle">
+        {label} <i className="fa fa-angle-down"></i>
+      </a>
+      <ul className="dropdown-menu border-0 shadow">
+        {children}
+      </ul>
+    </li>
+  );
+};
+
+const NavDropdownItem = ({ link, label, children }) => {
+  if (children) {
+    return (
+      <li className="dropdown-submenu">
+        <a href={link} role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="dropdown-item dropdown-toggle">
+          {label}
+        </a>
+        <ul className="dropdown-menu border-0 shadow">
+          {children}
+        </ul>
+      </li>
+    );
+  } else {
+    return (
+      <li>
+        <a href={link} className="dropdown-item">
+          {label}
+        </a>
+      </li>
+    );
+  }
 };
 
 export default Navbar;
