@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NewsLetter from "./NewsLetter";
+import NewsLetter, { NewsLetter2 } from "./NewsLetter";
 
 const FooterSection = ({ title, links }) => {
   return (
@@ -47,7 +47,7 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <NewsLetter />
+        <NewsLetter2 />
         <div className="background-header footer_padding">
           <div className="container">
             <div className="navigation_footer">
