@@ -1,119 +1,98 @@
-
+import React, { useState } from "react"
 const HomeCategories = () => {
+  const [categories] = useState([
+    {
+      icon: "maida-laptop",
+      text: "Laptops",
+    },
+    {
+      icon: "maida-briefcase",
+      text: "Empleos",
+    },
+    {
+      icon: "maida-t-shirt",
+      text: "Ropa",
+    },
+    {
+      icon: "maida-car-1",
+      text: "Carros",
+    },
+    {
+      icon: "maida-calculator",
+      text: "Auditors",
+    },
+    {
+      icon: "maida-zoo",
+      text: "máscotas",
+    },
+    {
+      icon: "maida-town-hall",
+      text: "Finance",
+    },
+    {
+      icon: "maida-art-gallery",
+      text: "Art",
+    },
+    {
+      icon: "maida-bar",
+      text: "Club",
+    },
+    {
+      icon: "maida-delivery-transport-2",
+      text: "Logistics",
+    },
+    {
+      icon: "maida-display",
+      text: "Electronicos",
+    },
+    {
+      icon: "maida-case-medic",
+      text: "Doctores",
+    },
+    {
+      icon: "fa-film",
+      text: "Entretenimiento",
+    },
+    {
+      icon: "maida-soccer",
+      text: "Juegos",
+    },
+    {
+      icon: "maida-phone",
+      text: "Celulares",
+    },
+    {
+      icon: "F",
+      text: "Support",
+    },
+    {
+      icon: "fa-book",
+      text: "Libros",
+    },
+    {
+      icon: "fa-child",
+      text: "Para niños",
+    },
+    
+  ]);
     return (
-        <div className="category-container">
-        <div className="container">
-          <h2 className="text-center styleh2 karma">
-            <a className="greens" href="/category">Categorias</a>
-          </h2>
-          <div className="cat-icons">
-            <a href="#">
-              <div className="mainicon icon maida-laptop">
-                <span className="text-icon">Laptops</span>
+      <div className="category-container">
+      <div className="container">
+        <h2 className="text-center styleh2 karma">
+          <a className="greens" href="/category">Categorias</a>
+        </h2>
+        <div className="cat-icons">
+          {categories.map((category, index) => (
+            <a href="#" key={index}>
+              <div className={`mainicon icon ${category.icon}`}>
+                <span className="text-icon">{category.text}</span>
               </div>
             </a>
-            <a href="#">
-              <div className="mainicon icon maida-briefcase">
-                <span className="text-icon">Empleos</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-t-shirt">
-                <span className="text-icon">Ropa</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-car-1">
-                <span className="text-icon">Carros</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-calculator">
-                <span className="text-icon">Auditors</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-zoo">
-                <span className="text-icon">máscotas</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-town-hall">
-                <span className="text-icon">Finance</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-art-gallery">
-                <span className="text-icon">Art</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-fast-food">
-                <span className="text-icon">Comida</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-bar">
-                <span className="text-icon">Club</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-delivery-transport-2">
-                <span className="text-icon">Logistics</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-display">
-                <span className="text-icon">Electronicos</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-cup">
-                <span className="text-icon">Cafe</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-case-medic">
-                <span className="text-icon">Doctores</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon">
-                <i className="fa fa-film" aria-hidden="true"></i>
-                <span className="text-icon">Entretenimiento</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-soccer">
-                <span className="text-icon">Juegos</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon maida-phone">
-                <span className="text-icon">Celulares</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon icon" data-icon="F">
-                <span className="text-icon">Support</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon">
-                <i className="fa fa-book" aria-hidden="true"></i>
-                <span className="text-icon">Libros</span>
-              </div>
-            </a>
-            <a href="#">
-              <div className="mainicon">
-                <i className="fa fa-child" aria-hidden="true"></i>
-                <span className="text-icon">Para niños</span>
-              </div>
-            </a>
-            <div className="clearfix"></div>
-          </div>
+          ))}
+          <div className="clearfix"></div>
         </div>
       </div>
+    </div>
     )
 }
 

@@ -1,400 +1,198 @@
+import React, { useState } from "react";
+
 const Categories = () => {
-    return (
-        <div className="post-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <nav aria-label="breadcrumb">
-                <ol className="breadcrumb">
-                  <li className="breadcrumb-item"><a href="#">Home</a></li>
-                  <li className="breadcrumb-item active" aria-current="page">
-                    Category
-                  </li>
-                </ol>
-              </nav>
-              <h2 className="styleh2 karma text-center">Phone</h2>
-            </div>
-            <div className="col-xl-12 col-lg-12 col-md-9 col-sm-12">
-              <div className="row">
-                <div className="col-xl-12 col-lg-12">
+  // Categories data using useState hook
+  const [categories] = useState([
+    {
+      id: 1,
+      imgSrc: "img/sport-3365503_640.jpg",
+      name: "Iphone 64GB 6s Plus",
+      category: "Phones",
+      location: "London",
+      price: "1600"
+    },
+    {
+      id: 2,
+      imgSrc: "img/books-1617327_640.jpg",
+      name: "Books for rent",
+      category: "Books",
+      location: "Berlin",
+      price: "5000"
+    },
+    {
+      id: 3,
+      imgSrc: "img/football-3471371_640.jpg",
+      name: "Football New fifa",
+      category: "Games",
+      location: "Lahore",
+      price: "10.0 M"
+    },
+    
+    {
+      id: 4,
+      imgSrc: "img/bicycle-1209682_640.jpg",
+      name: "Bicycle",
+      category: "Vehicle",
+      location: "New York",
+      price: "500.0 k"
+    },
+    {
+      id: 5,
+      imgSrc: "img/vegetables-1584999_640.jpg",
+      name: "Fresh Food And ....",
+      category: "Food",
+      location: "Norway",
+      price: "150.0 k"
+    },
+    {
+      id: 6,
+      imgSrc: "img/bmw-1313343_640.jpg",
+      name: "New BMW For...",
+      category: "Car",
+      location: "Australia",
+      price: "10.0 m"
+    },
+    {
+      id: 7,
+      imgSrc: "img/job-2860035_640.jpg",
+      name: "We are hiring",
+      category: "Jobs",
+      location: "Pakistan",
+      price: "..."
+    },
+    {
+      id: 8,
+      imgSrc: "img/home-office-336374_640.jpg",
+      name: "Apple Mac 16gb..",
+      category: "Laptop",
+      location: "Auckland",
+      price: "500.0 k"
+    },
+    {
+      id: 9,
+      imgSrc: "img/monitor-1276949_640.jpg",
+      name: "32' Lcd Tv",
+      category: "LCD",
+      location: "Paris",
+      price: "2800"
+    },
+    {
+      id: 10,
+      imgSrc: "img/pug-801826_640.jpg",
+      name: "Dog for adoption",
+      category: "Animal",
+      location: "Japan",
+      price: "Free"
+    },
+    {
+      id: 11,
+      imgSrc: "img/rottweiler-1785760_640.jpg",
+      name: "2 Pupies Inocent",
+      category: "Dogs",
+      location: "Turkey",
+      price: "5.0 M"
+    },
+    {
+      id: 12,
+      imgSrc: "img/medical-563427_640.jpg",
+      name: "Child Care Center",
+      category: "Child Care",
+      location: "Atlanta",
+      price: "50.0 k"
+    },
+  ]);
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const itemsPerPage = 3; // Number of items to show per page
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const visibleCategories = categories.slice(startIndex, startIndex + itemsPerPage);
+
+  return (
+    <div className="post-section">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <nav aria-label="breadcrumb">
+              <ol className="breadcrumb">
+                <li className="breadcrumb-item"><a href="#">Home</a></li>
+                <li className="breadcrumb-item active" aria-current="page">Category</li>
+              </ol>
+            </nav>
+            <h2 className="styleh2 karma text-center">Phone</h2>
+          </div>
+          <div className="col-xl-12 col-lg-12 col-md-9 col-sm-12">
+            <div className="row">
+              <div className="col-xl-12 col-lg-12">
                   <p>14,185 ads in <strong>United States Of America</strong></p>
                 </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
+              {visibleCategories.map((category) => (
+                <div className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px" key={category.id}>
                   <div className="post-box">
                     <div className="thumbnail-holder">
                       <a href="/product">
-                        <img src="img/sport-3365503_640.jpg" alt="iphone" />
+                        <img src={category.imgSrc} alt={category.name} />
                       </a>
                     </div>
                     <div className="post-box-content">
-                      <h3><a href="#">Iphone 64GB 6s Plus</a></h3>
-
+                      <h3><a href="#">{category.name}</a></h3>
                       <div className="post-category">
-                        <a href="#"> <i className="fa fa-list-alt"></i> Phones</a>
+                        <a href="#"><i className="fa fa-list-alt"></i> {category.category}</a>
                       </div>
                       <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i> London</a
-                        >
+                        <a href="#"><i className="fa fa-location-arrow"></i> {category.location}</a>
                       </div>
                       <div className="post-meta">
-                        <i className="fa fa-dollar"></i>1600
+                        <i className="fa fa-dollar"></i>{category.price}
                       </div>
                       <div className="clearfix"></div>
                     </div>
                   </div>
                 </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <div className="post-box">
-                    <div className="thumbnail-holder">
-                      <a href="/product">
-                        <img src="img/books-1617327_640.jpg" alt="books" />
-                      </a>
-                    </div>
-                    <div className="post-box-content">
-                      <h3><a href="#">Books for rent</a></h3>
-
-                      <div className="post-category">
-                        <a href="#"> <i className="fa fa-list-alt"></i> Books</a>
-                      </div>
-                      <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i> Berlin</a
-                        >
-                      </div>
-                      <div className="post-meta">
-                        <i className="fa fa-dollar"></i>5000
-                      </div>
-                      <div className="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <div className="post-box">
-                    <div className="thumbnail-holder">
-                      <a href="/product">
-                        <img src="img/football-3471371_640.jpg" alt="Footbal" />
-                      </a>
-                    </div>
-                    <div className="post-box-content">
-                      <h3><a href="#">Football New fifa</a></h3>
-
-                      <div className="post-category">
-                        <a href="#"> <i className="fa fa-list-alt"></i> Games</a>
-                      </div>
-                      <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i> Lahore</a
-                        >
-                      </div>
-                      <div className="post-meta">
-                        <i className="fa fa-dollar"></i>10.0 M
-                      </div>
-                      <div className="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <div className="post-box">
-                    <div className="thumbnail-holder">
-                      <a href="/product">
-                        <img src="img/bicycle-1209682_640.jpg" alt="bicycle" />
-                      </a>
-                    </div>
-                    <div className="post-box-content">
-                      <h3><a href="#">Bicyle</a></h3>
-
-                      <div className="post-category">
-                        <a href="#"> <i className="fa fa-list-alt"></i> vehicle</a>
-                      </div>
-                      <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i> New York</a
-                        >
-                      </div>
-                      <div className="post-meta">
-                        <i className="fa fa-dollar"></i>500.0 k
-                      </div>
-                      <div className="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <div className="post-box">
-                    <div className="thumbnail-holder">
-                      <a href="/product">
-                        <img
-                          src="img/vegetables-1584999_640.jpg"
-                          alt="vegetable"
-                        />
-                      </a>
-                    </div>
-                    <div className="post-box-content">
-                      <h3><a href="#">Fresh Food And ....</a></h3>
-
-                      <div className="post-category">
-                        <a href="#"> <i className="fa fa-list-alt"></i> Food</a>
-                      </div>
-                      <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i> Norway</a
-                        >
-                      </div>
-                      <div className="post-meta">
-                        <i className="fa fa-dollar"></i>150.0 k
-                      </div>
-                      <div className="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <div className="post-box">
-                    <div className="thumbnail-holder">
-                      <a href="/product">
-                        <img src="img/bmw-1313343_640.jpg" alt="Car" />
-                      </a>
-                    </div>
-                    <div className="post-box-content">
-                      <h3><a href="#">New BMW For...</a></h3>
-
-                      <div className="post-category">
-                        <a href="#"> <i className="fa fa-list-alt"></i> Car</a>
-                      </div>
-                      <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i>Australia</a
-                        >
-                      </div>
-                      <div className="post-meta">
-                        <i className="fa fa-dollar"></i>10.0 m
-                      </div>
-                      <div className="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <div className="post-box">
-                    <div className="thumbnail-holder">
-                      <a href="/product">
-                        <img src="img/job-2860035_640.jpg" alt="Footbal" />
-                      </a>
-                    </div>
-                    <div className="post-box-content">
-                      <h3><a href="#">we are hiring</a></h3>
-
-                      <div className="post-category">
-                        <a href="#"> <i className="fa fa-list-alt"></i> Jobs</a>
-                      </div>
-                      <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i> Pakistan</a
-                        >
-                      </div>
-                      <div className="post-meta">
-                        <i className="fa fa-dollar"></i>...
-                      </div>
-                      <div className="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <div className="post-box">
-                    <div className="thumbnail-holder">
-                      <a href="/product">
-                        <img
-                          src="img/home-office-336374_640.jpg"
-                          alt="laptop"
-                        />
-                      </a>
-                    </div>
-                    <div className="post-box-content">
-                      <h3><a href="#">Apple Mac 16gb..</a></h3>
-
-                      <div className="post-category">
-                        <a href="#"> <i className="fa fa-list-alt"></i> Laptop</a>
-                      </div>
-                      <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i> Auckland</a
-                        >
-                      </div>
-                      <div className="post-meta">
-                        <i className="fa fa-dollar"></i>500.0 k
-                      </div>
-                      <div className="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <div className="post-box">
-                    <div className="thumbnail-holder">
-                      <a href="/product">
-                        <img src="img/monitor-1276949_640.jpg" alt="Montior" />
-                      </a>
-                    </div>
-                    <div className="post-box-content">
-                      <h3><a href="#">32" Lcd Tv</a></h3>
-
-                      <div className="post-category">
-                        <a href="#"> <i className="fa fa-list-alt"></i> LCD</a>
-                      </div>
-                      <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i> Paris</a
-                        >
-                      </div>
-                      <div className="post-meta">
-                        <i className="fa fa-dollar"></i>2800
-                      </div>
-                      <div className="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <div className="post-box">
-                    <div className="thumbnail-holder">
-                      <a href="/product">
-                        <img src="img/pug-801826_640.jpg" alt="dog" />
-                      </a>
-                    </div>
-                    <div className="post-box-content">
-                      <h3><a href="#">Dog for adoption</a></h3>
-
-                      <div className="post-category">
-                        <a href="#"> <i className="fa fa-list-alt"></i> Animal</a>
-                      </div>
-                      <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i> Japan</a
-                        >
-                      </div>
-                      <div className="post-meta">
-                        <i className="fa fa-dollar"></i>Free
-                      </div>
-                      <div className="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <div className="post-box">
-                    <div className="thumbnail-holder">
-                      <a href="/product">
-                        <img
-                          src="img/rottweiler-1785760_640.jpg"
-                          alt="pupies"
-                        />
-                      </a>
-                    </div>
-                    <div className="post-box-content">
-                      <h3><a href="#">2 Pupies Inocent</a></h3>
-
-                      <div className="post-category">
-                        <a href="#"> <i className="fa fa-list-alt"></i> Dogs</a>
-                      </div>
-                      <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i> Turkey</a
-                        >
-                      </div>
-                      <div className="post-meta">
-                        <i className="fa fa-dollar"></i>5.0 M
-                      </div>
-                      <div className="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                className="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <div className="post-box">
-                    <div className="thumbnail-holder">
-                      <a href="/product">
-                        <img src="img/medical-563427_640.jpg" alt="doc" />
-                      </a>
-                    </div>
-                    <div className="post-box-content">
-                      <h3><a href="#">Child Care Center</a></h3>
-
-                      <div className="post-category">
-                        <a href="#">
-                          <i className="fa fa-list-alt"></i> Child Care</a
-                        >
-                      </div>
-                      <div className="post-location">
-                        <a href="#">
-                          <i className="fa fa-location-arrow"></i> Atlanta</a
-                        >
-                      </div>
-                      <div className="post-meta">
-                        <i className="fa fa-dollar"></i>50.0 k
-                      </div>
-                      <div className="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px"
-                >
-                  <nav aria-label="Page navigation">
-                    <ul className="pagination justify-content-center flex-wrap">
-                      <li className="page-item disabled">
-                        <a className="page-link" href="#" tabindex="-1">Previous</a>
-                      </li>
-                      <li className="page-item">
-                        <a className="page-link active-pagination" href="#">1</a>
-                      </li>
-                      <li className="page-item">
-                        <a className="page-link" href="#">2</a>
-                      </li>
-                      <li className="page-item">
-                        <a className="page-link" href="#">3</a>
-                      </li>
-                      <li className="page-item">
-                        <a className="page-link" href="#">...</a>
-                      </li>
-                      <li className="page-item">
-                        <a className="page-link" href="#">93</a>
-                      </li>
-                      <li className="page-item">
-                        <a className="page-link" href="#">94</a>
-                      </li>
-                      <li className="page-item">
-                        <a className="page-link" href="#">95</a>
-                      </li>
-                      <li className="page-item">
-                        <a className="page-link" href="#">Next</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
+              ))}
             </div>
+          </div>
+          <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 margin_10px">
+            <nav aria-label="Page navigation">
+              <ul className="pagination justify-content-center flex-wrap">
+                <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
+                  <a
+                    className="page-link"
+                    href="#"
+                    tabIndex="-1"
+                    onClick={() => setCurrentPage((prevPage) => prevPage - 1)}
+                  >
+                    Previous
+                  </a>
+                </li>
+                {/* Generate pagination numbers */}
+                {Array.from({ length: Math.ceil(categories.length / itemsPerPage) }, (_, index) => index + 1).map((pageNum) => (
+                  <li className={`page-item ${currentPage === pageNum ? "active" : ""}`} key={pageNum}>
+                    <a
+                      className="page-link"
+                      href="#"
+                      onClick={() => setCurrentPage(pageNum)}
+                    >
+                      {pageNum}
+                    </a>
+                  </li>
+                ))}
+                <li className={`page-item ${currentPage === Math.ceil(categories.length / itemsPerPage) ? "disabled" : ""}`}>
+                  <a
+                    className="page-link"
+                    href="#"
+                    onClick={() => setCurrentPage((prevPage) => prevPage + 1)}
+                  >
+                    Next
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
-    )
+    </div>
+  );
 }
 
-export default Categories
+export default Categories;
