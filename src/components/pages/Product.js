@@ -1,12 +1,12 @@
 import Footer from "../Footer"
-import Navbar from "../NavBar"
+import Navbar, { Navbar2 } from "../NavBar"
 import ProductBanner from "../ProductBanner"
 import ProductPost from "../ProductPost"
 
 const Product = () => {
     return (
         <>
-            <Navbar />
+            <Navbar2 />
             <div className="content blog">
                 <ProductBanner />
                 <ProductPost />

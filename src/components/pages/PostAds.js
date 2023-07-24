@@ -1,11 +1,11 @@
 import Footer from "../Footer"
-import Navbar from "../NavBar"
+import  { Navbar2 } from "../NavBar"
 import PostAdsBanner from "../PostAdsBanner"
 
 const PostAds = () => {
     return (
         <>
-            <Navbar />
+            <Navbar2 />
             <PostAdsBanner />
             <Footer />
         </>

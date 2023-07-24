@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "./TopBar";
+import TopBar, { TopBar2 } from "./TopBar";
 
 const Navbar = () => {
   return (
@@ -55,6 +55,69 @@ const Navbar = () => {
                 <NavItem link="/contactus" label="Contáctanos" />
                 <NavItem link="/loginRegister" label={<><i className="fa fa-user" aria-hidden="true"></i> Login /Registro</>} />
                 <NavAd link="/postad" label="Anuncia Gratis" />
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const Navbar2 = () => {
+  return (
+    <div className="background-header">
+      <TopBar2 />
+      <div className="container">
+        <div className="navigation">
+          <nav className="navbar navbar-expand-lg justify-content-between nav-color zeropadd">
+            <div className="navbar-header">
+              <a className="navbar-brand zeropadd" href="/">
+                <img src="img/logo_200x200.png" alt="logo" className="max-width-60px" />
+              </a>
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="nav navbar-nav ml-auto">
+                <NavItem link="/" label="Home" isActive={true} />
+                <NavItem link="/category" label="Advance Search" />
+                <NavDropdown label="Categories">
+                  <NavDropdownItem link="/category" label="Jobs" />
+                  <NavDropdownItem link="/category" label="Properties" />
+                  <NavDropdownItem link="/category" label="Phones">
+                    <NavDropdownItem link="/category" label="Apple" />
+                    <NavDropdownItem link="/category" label="Samsung" />
+                    <NavDropdownItem link="/category" label="LG" />
+                  </NavDropdownItem>
+                  <NavDropdownItem link="/category" label="Cars">
+                    <NavDropdownItem link="/category" label="Toyota" />
+                    <NavDropdownItem link="/category" label="Suzuki" />
+                    <NavDropdownItem link="/category" label="Honda" />
+                  </NavDropdownItem>
+                  <NavDropdownItem link="/category" label="Rent" />
+                  <NavDropdownItem link="/category" label="Services" />
+                </NavDropdown>
+
+                <NavDropdown label="Pages">
+                  <NavDropdownItem link="/about-us" label="About" />
+                  <NavDropdownItem link="blog" label="Blog" />
+                  <NavDropdownItem link="/contactus" label="Contact Us" />
+                  <NavDropdownItem link="/faq" label="Faq" />
+                </NavDropdown>
+
+                <NavItem link="/contactus" label="Contact Us" />
+                <NavItem link="/loginRegister" label={<><i className="fa fa-user" aria-hidden="true"></i> Login / Register</>} />
+                <NavAd link="/postad" label="Post Free Ad" />
               </ul>
             </div>
           </nav>

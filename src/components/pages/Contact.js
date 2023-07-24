@@ -1,14 +1,14 @@
 import ContactBanner from "../../ContactBanner"
 import ContactPost from "../ContactPost"
 import Footer from "../Footer"
-import Navbar from "../NavBar"
+import  { Navbar2 } from "../NavBar"
 import Spinner from "../Spinner";
 
 const Contact = () => {
     return (
         <>
             <Spinner />
-            <Navbar />
+            <Navbar2 />
             <div className="content allads">
                 <ContactBanner />
                 <ContactPost />

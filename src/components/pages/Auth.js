@@ -1,14 +1,14 @@
 import AuthBanner from "../AuthBanner"
 import AuthForms from "../AuthForms"
 import Footer from "../Footer"
-import Navbar from "../NavBar"
+import  { Navbar2 } from "../NavBar"
 import Spinner from "../Spinner";
 
 const Auth = () => {
     return (
         <>
             <Spinner />
-            <Navbar />
+            <Navbar2 />
             <div className="content blog">
                 <AuthBanner />
                 <AuthForms />

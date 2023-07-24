@@ -1,14 +1,14 @@
 import Categories from "../Categories"
 import CategoryBanner from "../CategoryBanner"
 import Footer from "../Footer"
-import Navbar from "../NavBar"
+import  { Navbar2 } from "../NavBar"
 import Spinner from "../Spinner";
 
 const Category = () => {
     return (
         <>
             <Spinner />
-            <Navbar />
+            <Navbar2 />
             <div className="content allads">
                 <CategoryBanner />
                 <Categories />
