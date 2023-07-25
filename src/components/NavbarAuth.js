@@ -48,39 +48,10 @@ const NavbarAuth = () => {
                     title="Categories"
                     subItems={["Jobs", "Properties", "Phones", "Cars", "Rent", "Services"]}
                   />
-                  <li className="nav-item dropdown">
-                    <a
-                      href="#"
-                      className="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Pages <i className="fa fa-angle-down"></i>
-                    </a>
-                    <ul className="dropdown-menu border-0 shadow">
-                      <li>
-                        <a href="/aboutus" className="dropdown-item">
-                          About
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/blog" className="dropdown-item">
-                          Blog
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/contactus" className="dropdown-item">
-                          Contact Us
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/faq" className="dropdown-item">
-                          Faq
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
+                  <DropdownItem
+                  title="Pages"
+                  subItems={["About", "Blog", "Contact Us", "Faq"]}
+                />
                   <li className="nav-item">
                     <a className="nav-link" href="/contactus">
                       Contact Us
@@ -130,7 +101,6 @@ const NavbarAuth = () => {
     );
 };
   
-  
 const DropdownItem = ({ title, subItems }) => {
     const [isOpen, setIsOpen] = useState(false);
   
@@ -139,29 +109,27 @@ const DropdownItem = ({ title, subItems }) => {
     };
   
     return (
-      <li className="nav-item dropdown">
+      <li className={`nav-item dropdown ${isOpen ? "show" : ""}`}>
         <a
           href="#"
-          className={`nav-link dropdown-toggle ${isOpen ? "show" : ""}`}
-          onClick={handleToggle}
           role="button"
+          onClick={handleToggle}
+          className="nav-link dropdown-toggle"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded={isOpen ? "true" : "false"}
         >
           {title} <i className="fa fa-angle-down"></i>
         </a>
-        {isOpen && (
-          <ul className="dropdown-menu border-0 shadow show">
-            {subItems.map((item, index) => (
-              <li key={index}>
-                <a href="/category" className="dropdown-item">
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
+        <ul className={`dropdown-menu ${isOpen ? "show" : ""}`}>
+          {subItems.map((item, index) => (
+            <li key={index}>
+              <a href="/category" className="dropdown-item">
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
       </li>
     );
   };
