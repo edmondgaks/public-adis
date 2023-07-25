@@ -1,20 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/pages/Home';
-import Category from './components/pages/Category';
-import AboutUs from './components/pages/AboutUs';
-import Blog from './components/pages/Blog';
-import Contact from './components/pages/Contact';
-import FAQ from './components/pages/FAQ';
-import Auth from './components/pages/Auth';
-import PostAds from './components/pages/PostAds';
-import MyProfile from './components/pages/MyProfile';
-import MyAds from './components/pages/MyAds';
-import Product from './components/pages/Product';
-import Dashboard from './components/pages/Dashboard';
-import SingleAd from './components/pages/SingleAd';
-import ErrorPage from './components/pages/404Page';
-import AllAds from './components/pages/AllAds';
-import Search from './components/pages/Search';
+
+
+import { Home, Category, AboutUs, Blog, Contact, FAQ, Auth, PostAds, MyProfile, MyAds, Product, Dashboard, SingleAd, ErrorPage, AllAds, Search, SingleBlog } from "./components/pages";
 
 function App() {
   return (
@@ -36,6 +23,7 @@ function App() {
         <Route path='/404not' element={<ErrorPage /> } />
         <Route path='/allads' element={<AllAds /> } />
         <Route path='/search' element={<Search /> } />
+        <Route path='/singleblog' element={<SingleBlog /> } />
       </Routes>
     </Router>
   );

@@ -87,19 +87,10 @@ const SingleAdPost = () => {
                 <div class="post-content-wrapper">
                   <h2>Eum Iriure Dolor Duis Autem</h2>
                   <div class="meta">
-                    <a href="#"
-                      ><i class="fa fa-user" aria-hidden="true"></i> Maida
-                      Themes</a
-                    >
+                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Maida Themes</a>
                     <a href="#"><i class="fa fa-calendar"></i> Sep. 29, 2019</a>
-                    <a href="#"
-                      ><i class="fa fa-star" aria-hidden="true"></i>
-                      Important</a
-                    >
-                    <a href="#"
-                      ><i class="fa fa-comment" aria-hidden="true"></i>
-                      Comments</a
-                    >
+                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i> Important</a>
+                    <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Comments</a>
                   </div>
                   <div class="entry-summary">
                     <p>
@@ -148,15 +139,9 @@ const SingleAdPost = () => {
                             class="fa fa-facebook-official"
                             aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"
-                          ><i class="fa fa-whatsapp" aria-hidden="true"></i>
-                        </a>
-                        <a href="#"
-                          ><i class="fa fa-instagram" aria-hidden="true"></i
-                        ></a>
-                        <a href="#"
-                          ><i class="fa fa-pinterest" aria-hidden="true"></i>
-                        </a>
+                        <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                       </div>
                     </div>
 
@@ -178,10 +163,8 @@ const SingleAdPost = () => {
                               <div class="media-heading">
                                 <h4 class="name">PublicAdisThems</h4>
                                 <span class="comment-date">
-                                  <i class="fa fa-clock-o"></i> June 29,
-                                  2019</span>
-                                <a href="#" class="reply-link"
-                                  ><i class="fa fa-reply"></i> Reply</a>
+                                  <i class="fa fa-clock-o"></i> June 29, 2019</span>
+                                <a href="#" class="reply-link"><i class="fa fa-reply"></i> Reply</a>
                               </div>
                               <p>
                                 Lorem ipsum dolor sit amet, consectetur
@@ -209,12 +192,8 @@ const SingleAdPost = () => {
                                   <div class="media-heading">
                                     <h4 class="name">PublicAdisThems</h4>
                                     <span class="comment-date">
-                                      <i class="fa fa-clock-o"></i> June 29,
-                                      2019</span
-                                    >
-                                    <a href="#" class="reply-link"
-                                      ><i class="fa fa-reply"></i> Reply</a
-                                    >
+                                      <i class="fa fa-clock-o"></i> June 29, 2019</span>
+                                    <a href="#" class="reply-link"><i class="fa fa-reply"></i> Reply</a>
                                   </div>
                                   <p>
                                     Lorem ipsum dolor sit amet, consectetur
@@ -244,12 +223,8 @@ const SingleAdPost = () => {
                               <div class="media-heading">
                                 <h4 class="name">PublicAdisThems</h4>
                                 <span class="comment-date">
-                                  <i class="fa fa-clock-o"></i> June 29,
-                                  2019</span
-                                >
-                                <a href="#" class="reply-link"
-                                  ><i class="fa fa-reply"></i> Reply</a
-                                >
+                                  <i class="fa fa-clock-o"></i> June 29, 2019</span>
+                                <a href="#" class="reply-link"><i class="fa fa-reply"></i> Reply</a>
                               </div>
                               <p>
                                 Lorem ipsum dolor sit amet, consectetur
@@ -310,9 +285,8 @@ const SingleAdPost = () => {
                               <button
                                 type="submit"
                                 id="submit"
-                                class="custom-button"
-                              >
-                                Post Comment
+                                class="custom-button">
+                                  Post Comment
                               </button>
                             </div>
                           </div>
@@ -320,9 +294,7 @@ const SingleAdPost = () => {
                       </div>
                       <div class="m-10">
                         <div class="page-item float-left">
-                          <a class="page-link" href="#" tabindex="-1"
-                            >Previous Post</a
-                          >
+                          <a class="page-link" href="#" tabindex="-1">Previous Post</a>
                         </div>
                         <div class="page-item float-right">
                           <a class="page-link" href="#">Next Post</a>

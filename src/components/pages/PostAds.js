@@ -1,12 +1,13 @@
 import Footer from "../Footer"
-import  { Navbar2 } from "../NavBar"
 import NavbarAuth from "../NavbarAuth"
 import { NewsLetter2 } from "../NewsLetter"
 import PostAdsBanner from "../PostAdsBanner"
+import Spinner from "../Spinner"
 
 const PostAds = () => {
     return (
         <>
+            <Spinner />
             <NavbarAuth />
             <PostAdsBanner />
             <NewsLetter2 />

@@ -1,4 +1,3 @@
-import AuthBanner from "../AuthBanner"
 import Footer from "../Footer"
 import MyAdsPost from "../MyAdsPost"
 import Spinner from "../Spinner";

@@ -1,16 +1,18 @@
 import Footer from "../Footer"
 import  { Navbar2 } from "../NavBar"
 import { NewsLetter2 } from "../NewsLetter"
-import ProductBanner from "../ProductBanner"
-import ProductPost from "../ProductPost"
+import SingleBlogHero from "../SingleBlogHero"
+import SingleBlogPost from "../SingleBlogPost"
+import Spinner from "../Spinner"
 
-const Product = () => {
+const SingleBlog = () => {
     return (
         <>
+            <Spinner />
             <Navbar2 />
             <div className="content blog">
-                <ProductBanner />
-                <ProductPost />
+                <SingleBlogHero />
+                <SingleBlogPost />
             </div>
             <NewsLetter2 />
             <Footer />
@@ -18,4 +20,4 @@ const Product = () => {
     )
 }
 
-export default Product
+export default SingleBlog

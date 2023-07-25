@@ -1,7 +1,7 @@
 import BlogHero from "../BlogHero"
 import BlogPost from "../BlogPost"
 import Footer from "../Footer"
-import Navbar, { Navbar2 } from "../NavBar"
+import  { Navbar2 } from "../NavBar"
 import { NewsLetter2 } from "../NewsLetter";
 import Spinner from "../Spinner";
 

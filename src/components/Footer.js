@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NewsLetter, { NewsLetter2 } from "./NewsLetter";
 
 const FooterSection = ({ title, links }) => {
   return (
