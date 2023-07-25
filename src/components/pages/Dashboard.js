@@ -1,14 +1,14 @@
 import CoverChange from "../CoverChange"
 import DashboardPost from "../DashboardPost"
 import Footer from "../Footer"
-import Navbar from "../NavBar"
+import NavbarAuth from "../NavbarAuth";
 import Spinner from "../Spinner";
 
 const Dashboard = () => {
     return (
         <>
             <Spinner />
-            <Navbar />
+            <NavbarAuth />
             <div className="content blog">
                 <CoverChange />
                 <DashboardPost />

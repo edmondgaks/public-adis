@@ -1,14 +1,14 @@
 import AuthBanner from "../AuthBanner"
 import Footer from "../Footer"
 import MyAdsPost from "../MyAdsPost"
-import Navbar from "../NavBar"
 import Spinner from "../Spinner";
 import PostAdHero from "../PostAdHero";
+import NavbarAuth from "../NavbarAuth";
 const MyAds = () => {
     return (
         <>
             <Spinner />
-            <Navbar />
+            <NavbarAuth />
             <div className="content allads">
                 <PostAdHero />
                 <MyAdsPost />

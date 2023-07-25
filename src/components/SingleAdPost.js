@@ -1,4 +1,76 @@
+import React, { useState } from "react";
+
 const SingleAdPost = () => {
+    const [categories] = useState([
+        {
+          icon: "maida-laptop",
+          text: "Laptops",
+        },
+        {
+          icon: "maida-briefcase",
+          text: "Jobs",
+        },
+        {
+          icon: "maida-t-shirt",
+          text: "Garments",
+        },
+        {
+          icon: "maida-car-1",
+          text: "Cars",
+        },
+        {
+          icon: "maida-calculator",
+          text: "Auditors",
+        },
+        {
+          icon: "maida-zoo",
+          text: "Animals", 
+        },
+        {
+          icon: "maida-town-hall",
+          text: "Finance",
+        },
+        {
+          icon: "maida-art-gallery",
+          text: "Art",
+        },
+        {
+            icon: "maida-fast-food",
+            text: "Food"
+        },
+        {
+          icon: "maida-bar",
+          text: "Club",
+        },
+        {
+          icon: "maida-delivery-transport-2",
+          text: "Logistics",
+        },
+        {
+          icon: "maida-display",
+          text: "Electronics",
+        },
+        {
+            icon: "maida-cup",
+            text: "Cafe",     
+        },
+        {
+          icon: "maida-case-medic",
+          text: "Doctors",
+        },
+        {
+          icon: "fa-film",
+          text: "Entertainment",
+        },
+        {
+          icon: "maida-soccer",
+          text: "Games",
+        },
+        {
+          icon: "maida-phone",
+          text: "Phones",
+        }
+      ]);
     return (
         <div class="post-section blog">
         <div class="container">
@@ -72,12 +144,9 @@ const SingleAdPost = () => {
                     </p>
                     <div class="share-items">
                       <div class="meta">
-                        <a href="#"
-                          ><i
+                        <a href="#"><i
                             class="fa fa-facebook-official"
-                            aria-hidden="true"
-                          ></i
-                        ></a>
+                            aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
                         <a href="#"
                           ><i class="fa fa-whatsapp" aria-hidden="true"></i>
@@ -110,11 +179,9 @@ const SingleAdPost = () => {
                                 <h4 class="name">PublicAdisThems</h4>
                                 <span class="comment-date">
                                   <i class="fa fa-clock-o"></i> June 29,
-                                  2019</span
-                                >
+                                  2019</span>
                                 <a href="#" class="reply-link"
-                                  ><i class="fa fa-reply"></i> Reply</a
-                                >
+                                  ><i class="fa fa-reply"></i> Reply</a>
                               </div>
                               <p>
                                 Lorem ipsum dolor sit amet, consectetur
@@ -295,98 +362,15 @@ const SingleAdPost = () => {
                     <a class="greens" href="#">Categories</a>
                   </h2>
                   <div class="cat-icons">
-                    <a href="#">
-                      <div class="mainicon icon maida-laptop">
-                        <span class="text-icon">Laptop</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-briefcase">
-                        <span class="text-icon">Job</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-t-shirt">
-                        <span class="text-icon">Garments</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-car-1">
-                        <span class="text-icon">Cars</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-calculator">
-                        <span class="text-icon">Auditors</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-zoo">
-                        <span class="text-icon">Animals</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-town-hall">
-                        <span class="text-icon">Finance</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-art-gallery">
-                        <span class="text-icon">Art</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-fast-food">
-                        <span class="text-icon">Food</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-bar">
-                        <span class="text-icon">Club</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-delivery-transport-2">
-                        <span class="text-icon">Logistics</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-display">
-                        <span class="text-icon">Electronics</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-cup">
-                        <span class="text-icon">Cafe</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-case-medic">
-                        <span class="text-icon">Doctors</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon">
-                        <i class="fa fa-film" aria-hidden="true"></i>
-                        <span class="text-icon">Entertainment</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-soccer">
-                        <span class="text-icon">Games</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon maida-phone">
-                        <span class="text-icon">Phones</span>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="mainicon icon" data-icon="F">
-                        <span class="text-icon">Support</span>
-                      </div>
-                    </a>
 
+                    {categories.map((category, index) => (
+                        <a href="#" key={index}>
+                        <div className={`mainicon icon ${category.icon}`}>
+                            <span className="text-icon">{category.text}</span>
+                        </div>
+                        </a>
+                    ))}
+                    
                     <div class="clearfix"></div>
                   </div>
                 </div>

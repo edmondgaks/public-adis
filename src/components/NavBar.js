@@ -128,6 +128,7 @@ export const Navbar2 = () => {
 };
 
 
+
 const NavItem = ({ link, label, isActive }) => {
   return (
     <li className={`nav-item${isActive ? ' active' : ''}`}>
@@ -138,6 +139,8 @@ const NavItem = ({ link, label, isActive }) => {
     </li>
   );
 };
+
+
 
 const NavAd = ({ link, label, isActive }) => {
     return (

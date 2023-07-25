@@ -1,14 +1,13 @@
 import Footer from "../Footer"
 import MyProfileBlog from "../MyProfileBlog"
-import Navbar from "../NavBar"
-import AuthBanner from "../AuthBanner"
 import Spinner from "../Spinner";
 import PostAdHero from "../PostAdHero"
+import NavbarAuth from "../NavbarAuth";
 const MyProfile = () => {
     return (
         <>
             <Spinner />
-            <Navbar />
+            <NavbarAuth />
             <div className="content blog">
                 <PostAdHero />
                 <MyProfileBlog />
