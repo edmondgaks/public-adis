@@ -11,6 +11,7 @@ import MyProfile from './components/pages/MyProfile';
 import MyAds from './components/pages/MyAds';
 import Product from './components/pages/Product';
 import Dashboard from './components/pages/Dashboard';
+import SingleAd from './components/pages/SingleAd';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/myads' element={<MyAds /> } />
         <Route path='/product' element={<Product /> } />
         <Route path='/dashboard' element={<Dashboard /> } />
+        <Route path='/singlead' element={<SingleAd /> } />
       </Routes>
     </Router>
   );
