@@ -44,14 +44,29 @@ const NavbarAuth = () => {
                       Advance Search
                     </a>
                   </li>
-                  <DropdownItem
-                    title="Categories"
-                    subItems={["Jobs", "Properties", "Phones", "Cars", "Rent", "Services"]}
-                  />
-                  <DropdownItem
-                  title="Pages"
-                  subItems={["About", "Blog", "Contact Us", "Faq"]}
-                />
+                  <NavDropdown label="Categories">
+                  <NavDropdownItem link="/category" label="Jobs" />
+                  <NavDropdownItem link="/category" label="Properties" />
+                  <NavDropdownItem link="/category" label="Phones">
+                    <NavDropdownItem link="/category" label="Apple" />
+                    <NavDropdownItem link="/category" label="Samsung" />
+                    <NavDropdownItem link="/category" label="LG" />
+                  </NavDropdownItem>
+                  <NavDropdownItem link="/category" label="Cars">
+                    <NavDropdownItem link="/category" label="Toyota" />
+                    <NavDropdownItem link="/category" label="Suzuki" />
+                    <NavDropdownItem link="/category" label="Honda" />
+                  </NavDropdownItem>
+                  <NavDropdownItem link="/category" label="Rent" />
+                  <NavDropdownItem link="/category" label="Services" />
+                </NavDropdown>
+
+                <NavDropdown label="Pages">
+                  <NavDropdownItem link="/about-us" label="About" />
+                  <NavDropdownItem link="blog" label="Blog" />
+                  <NavDropdownItem link="/contactus" label="Contact Us" />
+                  <NavDropdownItem link="/faq" label="Faq" />
+                </NavDropdown>
                   <li className="nav-item">
                     <a className="nav-link" href="/contactus">
                       Contact Us
@@ -133,6 +148,44 @@ const DropdownItem = ({ title, subItems }) => {
       </li>
     );
   };
+
+  
+const NavDropdown = ({ label, children }) => {
+    return (
+      <li className="nav-item dropdown">
+        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="nav-link dropdown-toggle">
+          {label} <i className="fa fa-angle-down"></i>
+        </a>
+        <ul className="dropdown-menu border-0 shadow">
+          {children}
+        </ul>
+      </li>
+    );
+  };
+  
+  const NavDropdownItem = ({ link, label, children }) => {
+    if (children) {
+      return (
+        <li className="dropdown-submenu">
+          <a href={link} role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" className="dropdown-item dropdown-toggle">
+            {label}
+          </a>
+          <ul className="dropdown-menu border-0 shadow">
+            {children}
+          </ul>
+        </li>
+      );
+    } else {
+      return (
+        <li>
+          <a href={link} className="dropdown-item">
+            {label}
+          </a>
+        </li>
+      );
+    }
+  };
+  
 
 
 
