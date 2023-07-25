@@ -94,7 +94,7 @@ const BlogPost = () => {
         <div className="masonry mansoryitem">
           {blogPosts.map((post) => (
             <div className="item" key={post.id}>
-              <a href="singleblog.html">
+              <a href="singleblog">
                 <p>{post.title}</p>
               </a>
               <a href="#">

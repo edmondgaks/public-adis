@@ -89,7 +89,7 @@ const Footer = () => {
                           <a href="#">Terms &amp; Condition</a>
                         </li>
                         <li>
-                          <a href="dashboard.html">Dashboard</a>
+                          <a href="/dashboard">Dashboard</a>
                         </li>
                         <li>
                           <a href="#">Privacy Policy </a>
