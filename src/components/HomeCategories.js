@@ -34,6 +34,10 @@ const HomeCategories = () => {
       text: "Art",
     },
     {
+      icon: "maida-fast-food",
+      text: "Comida"
+    },
+    {
       icon: "maida-bar",
       text: "Club",
     },
@@ -44,6 +48,10 @@ const HomeCategories = () => {
     {
       icon: "maida-display",
       text: "Electronicos",
+    },
+    {
+      icon: "maida-cup",
+      text: "Cafe"
     },
     {
       icon: "maida-case-medic",

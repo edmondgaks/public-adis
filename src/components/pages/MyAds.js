@@ -4,6 +4,7 @@ import MyAdsPost from "../MyAdsPost"
 import Spinner from "../Spinner";
 import PostAdHero from "../PostAdHero";
 import NavbarAuth from "../NavbarAuth";
+import { NewsLetter2 } from "../NewsLetter";
 const MyAds = () => {
     return (
         <>
@@ -12,8 +13,9 @@ const MyAds = () => {
             <div className="content allads">
                 <PostAdHero />
                 <MyAdsPost />
-                <Footer />
             </div>
+            <NewsLetter2 />
+            <Footer />
         </>
     )
 }

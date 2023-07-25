@@ -1,18 +1,16 @@
-import Categories from "../Categories"
+import AllAdsBanner from "../AllAdsBanner"
 import CategoryBanner from "../CategoryBanner"
 import Footer from "../Footer"
-import  { Navbar2 } from "../NavBar"
-import { NewsLetter2 } from "../NewsLetter";
-import Spinner from "../Spinner";
+import { Navbar2 } from "../NavBar"
+import { NewsLetter2 } from "../NewsLetter"
 
-const Category = () => {
+const AllAds = () => {
     return (
         <>
-            <Spinner />
             <Navbar2 />
             <div className="content allads">
                 <CategoryBanner />
-                <Categories />
+                <AllAdsBanner />
             </div>
             <NewsLetter2 />
             <Footer />
@@ -20,4 +18,4 @@ const Category = () => {
     )
 }
 
-export default Category
+export default AllAds

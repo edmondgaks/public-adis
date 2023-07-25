@@ -4,6 +4,7 @@ import Navbar from "../NavBar"
 import PostSection from "../PostSection"
 import HomeCategories from "../HomeCategories"
 import Spinner from "../Spinner";
+import NewsLetter from "../NewsLetter"
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
                 <HeroBanner />
                 <HomeCategories />
                 <PostSection />
+                <NewsLetter />
                 <Footer />
             </div>
         </>

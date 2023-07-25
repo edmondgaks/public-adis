@@ -47,7 +47,6 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <NewsLetter2 />
         <div className="background-header footer_padding">
           <div className="container">
             <div className="navigation_footer">

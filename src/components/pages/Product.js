@@ -1,5 +1,6 @@
 import Footer from "../Footer"
 import Navbar, { Navbar2 } from "../NavBar"
+import { NewsLetter2 } from "../NewsLetter"
 import ProductBanner from "../ProductBanner"
 import ProductPost from "../ProductPost"
 
@@ -11,6 +12,7 @@ const Product = () => {
                 <ProductBanner />
                 <ProductPost />
             </div>
+            <NewsLetter2 />
             <Footer />
         </>
     )

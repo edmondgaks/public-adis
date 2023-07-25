@@ -2,6 +2,7 @@ import AuthBanner from "../AuthBanner"
 import AuthForms from "../AuthForms"
 import Footer from "../Footer"
 import  { Navbar2 } from "../NavBar"
+import { NewsLetter2 } from "../NewsLetter";
 import Spinner from "../Spinner";
 
 const Auth = () => {
@@ -13,6 +14,7 @@ const Auth = () => {
                 <AuthBanner />
                 <AuthForms />
             </div>
+            <NewsLetter2 />
             <Footer />
         </>
     )

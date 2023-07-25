@@ -12,6 +12,9 @@ import MyAds from './components/pages/MyAds';
 import Product from './components/pages/Product';
 import Dashboard from './components/pages/Dashboard';
 import SingleAd from './components/pages/SingleAd';
+import ErrorPage from './components/pages/404Page';
+import AllAds from './components/pages/AllAds';
+import Search from './components/pages/Search';
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
         <Route path='/product' element={<Product /> } />
         <Route path='/dashboard' element={<Dashboard /> } />
         <Route path='/singlead' element={<SingleAd /> } />
+        <Route path='/404not' element={<ErrorPage /> } />
+        <Route path='/allads' element={<AllAds /> } />
+        <Route path='/search' element={<Search /> } />
       </Routes>
     </Router>
   );
