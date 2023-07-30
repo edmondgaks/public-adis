@@ -22,6 +22,8 @@ const Navbar = () => {
                 aria-label="Toggle navigation"
               >
                 <span className="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
             </div>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -84,6 +86,8 @@ export const Navbar2 = () => {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
+                <span className="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
                 <span className="navbar-toggler-icon"></span>
               </button>
             </div>

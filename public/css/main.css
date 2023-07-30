@@ -1571,7 +1571,7 @@ a:hover {
 		float: right;
 		margin-top: 20px;
 		width: 38px;
-		padding: 0;
+		padding: 10px;
 		display: block;
 	}
 
@@ -1585,7 +1585,7 @@ a:hover {
 		display: block;
 		float: left;
 		margin: 3px;
-		height: 2px;
+		height: 20px;
 	}
 
 	.nav-link i {
