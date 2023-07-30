@@ -10,8 +10,8 @@ const Home = () => {
     return (
         <>
             <Spinner />
-            <Navbar />
-            <div className="content allads">
+            <div className="content">
+                <Navbar />
                 <HeroBanner />
                 <HomeCategories />
                 <PostSection />

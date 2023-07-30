@@ -1,4 +1,4 @@
-import ContactBanner from "../../ContactBanner"
+import ContactBanner from "../ContactBanner"
 import ContactPost from "../ContactPost"
 import Footer from "../Footer"
 import  { Navbar2 } from "../NavBar"

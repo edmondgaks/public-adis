@@ -1,116 +1,116 @@
 import React, { useState } from "react"
 const HomeCategories = () => {
   return (
-    <div class="category-container">
-        <div class="container">
-          <h2 class="text-center styleh2 karma">
-            <a class="greens" href="#">Categorias</a>
+      <div className="category-container">
+        <div className="container">
+          <h2 className="text-center styleh2 karma">
+            <a className="greens" href="#">Categorias</a>
           </h2>
-          <div class="cat-icons">
+          <div className="cat-icons">
             <a href="#">
-              <div class="mainicon icon maida-laptop">
-                <span class="text-icon">Laptops</span>
+              <div className="mainicon icon maida-laptop">
+                <span className="text-icon">Laptops</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-briefcase">
-                <span class="text-icon">Empleos</span>
+              <div className="mainicon icon maida-briefcase">
+                <span className="text-icon">Empleos</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-t-shirt">
-                <span class="text-icon">Ropa</span>
+              <div className="mainicon icon maida-t-shirt">
+                <span className="text-icon">Ropa</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-car-1">
-                <span class="text-icon">Carros</span>
+              <div className="mainicon icon maida-car-1">
+                <span className="text-icon">Carros</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-calculator">
-                <span class="text-icon">Auditors</span>
+              <div className="mainicon icon maida-calculator">
+                <span className="text-icon">Auditors</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-zoo">
-                <span class="text-icon">máscotas</span>
+              <div className="mainicon icon maida-zoo">
+                <span className="text-icon">máscotas</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-town-hall">
-                <span class="text-icon">Finance</span>
+              <div className="mainicon icon maida-town-hall">
+                <span className="text-icon">Finance</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-art-gallery">
-                <span class="text-icon">Art</span>
+              <div className="mainicon icon maida-art-gallery">
+                <span className="text-icon">Art</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-fast-food">
-                <span class="text-icon">Comida</span>
+              <div className="mainicon icon maida-fast-food">
+                <span className="text-icon">Comida</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-bar">
-                <span class="text-icon">Club</span>
+              <div className="mainicon icon maida-bar">
+                <span className="text-icon">Club</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-delivery-transport-2">
-                <span class="text-icon">Logistics</span>
+              <div className="mainicon icon maida-delivery-transport-2">
+                <span className="text-icon">Logistics</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-display">
-                <span class="text-icon">Electronicos</span>
+              <div className="mainicon icon maida-display">
+                <span className="text-icon">Electronicos</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-cup">
-                <span class="text-icon">Cafe</span>
+              <div className="mainicon icon maida-cup">
+                <span className="text-icon">Cafe</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-case-medic">
-                <span class="text-icon">Doctores</span>
+              <div className="mainicon icon maida-case-medic">
+                <span className="text-icon">Doctores</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon">
-                <i class="fa fa-film" aria-hidden="true"></i>
-                <span class="text-icon">Entretenimiento</span>
+              <div className="mainicon">
+                <i className="fa fa-film" aria-hidden="true"></i>
+                <span className="text-icon">Entretenimiento</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-soccer">
-                <span class="text-icon">Juegos</span>
+              <div className="mainicon icon maida-soccer">
+                <span className="text-icon">Juegos</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon maida-phone">
-                <span class="text-icon">Celulares</span>
+              <div className="mainicon icon maida-phone">
+                <span className="text-icon">Celulares</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon icon" data-icon="F">
-                <span class="text-icon">Support</span>
+              <div className="mainicon icon" data-icon="F">
+                <span className="text-icon">Support</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon">
-                <i class="fa fa-book" aria-hidden="true"></i>
-                <span class="text-icon">Libros</span>
+              <div className="mainicon">
+                <i className="fa fa-book" aria-hidden="true"></i>
+                <span className="text-icon">Libros</span>
               </div>
             </a>
             <a href="#">
-              <div class="mainicon">
-                <i class="fa fa-child" aria-hidden="true"></i>
-                <span class="text-icon">Para niños</span>
+              <div className="mainicon">
+                <i className="fa fa-child" aria-hidden="true"></i>
+                <span className="text-icon">Para niños</span>
               </div>
             </a>
-            <div class="clearfix"></div>
+            <div className="clearfix"></div>
           </div>
         </div>
       </div>

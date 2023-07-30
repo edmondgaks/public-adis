@@ -1,7 +1,21 @@
-
+import React , { useState } from "react";
 const HeroBanner = () => {
+  const [popularSearches, setPopularSearches] = useState([
+    'locales',
+    'Autos',
+    'Departamentos',
+    'Alquiler',
+    'Empleos',
+    'Venta',
+    'Traspaso',
+    'Terrenos',
+    'Ropa',
+    'Casas',
+    'abogado',
+    'Restaurante',
+  ]);
     return (
-        <div className="hero-homepage">
+      <div className="hero-homepage">
         <div className="container wrapping-content">
           <div className="row">
             <div className="col-12 text-center">
@@ -35,30 +49,11 @@ const HeroBanner = () => {
               </div>
               <div className="popular_searches">
                 Búsquedas populares:
-
-                <a href="#">locales</a>,
-
-                <a href="#">Autos</a>,
-
-                <a href="#">Departamentos</a>,
-
-                <a href="#">Alquiler</a>,
-
-                <a href="#">Empleos</a>,
-
-                <a href="#">Venta</a>,
-
-                <a href="#">Traspaso</a>,
-
-                <a href="#">Terrenos</a>,
-
-                <a href="#">Ropa</a>,
-
-                <a href="#">Casas</a>,
-
-                <a href="#">abogado</a>,
-
-                <a href="#">Restaurante</a>
+                {popularSearches.map((searchTerm, index) => (
+                  <a key={index} href="#">
+                    {searchTerm} , 
+                  </a>
+                ))}
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import TopBar, { TopBar2 } from "./TopBar";
 
 const Navbar = () => {
   return (
-    <div className="background-header">
+    <header className="background-header">
       <TopBar />
       <div className="container">
         <div className="navigation">
@@ -60,13 +60,13 @@ const Navbar = () => {
           </nav>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
 export const Navbar2 = () => {
   return (
-    <div className="background-header">
+    <header className="background-header">
       <TopBar2 />
       <div className="container">
         <div className="navigation">
@@ -123,7 +123,7 @@ export const Navbar2 = () => {
           </nav>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
